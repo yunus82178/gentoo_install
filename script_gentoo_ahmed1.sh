@@ -21,10 +21,10 @@ mkdir --parents /mnt/gentoo/efi
 mount /dev/sda3 /mnt/gentoo
 cp -rf menuconfig_gentoo_ahmed.config /mnt/gentoo
 cp -rf script_gentoo_ahmed2.sh /mnt/gentoo
-cp -rf stage3-amd64-desktop-systemd-20240901T170410Z.tar.xz /mnt/gentoo
+#cp -rf stage3-amd64-desktop-systemd-20240901T170410Z.tar.xz /mnt/gentoo
 cd /mnt/gentoo/
 
-#wget -c https://distfiles.gentoo.org/releases/amd64/autobuilds/20240901T170410Z/stage3-amd64-desktop-systemd-20240901T170410Z.tar.xz
+wget -c https://distfiles.gentoo.org/releases/amd64/autobuilds/20240901T170410Z/stage3-amd64-desktop-systemd-20240901T170410Z.tar.xz
 
 tar xpvf stage3-*.tar.xz --xattrs-include='*.*' --numeric-owner
 #nano /mnt/gentoo/etc/portage/make.conf
